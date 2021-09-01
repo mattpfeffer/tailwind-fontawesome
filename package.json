@@ -1,0 +1,33 @@
+{
+    "name": "tailwind-fontawesome",
+    "version": "0.0.0",
+    "description": "A set of utility classes that make pairing Font Awesome with Tailwind CSS a breeze.",
+    "main": "src/index.js",
+    "repository": "https://github.com/mattpfeffer/tailwind-fontawesome",
+    "license": "MIT",
+    "scripts": {
+        "watch": "gulp watch --silent",
+        "next": "node ./.scripts/next-version.js",
+        "release": "standard-version"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
+        "@doamatto/gulp-eslint": "^6.2.8",
+        "conventional-recommended-bump": "^6.1.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-semistandard": "^16.0.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.24.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "gulp": "^4.0.2",
+        "gulp-prettier": "^4.0.0",
+        "husky": "^7.0.2",
+        "prettier": "^2.3.2",
+        "semver": "^7.3.5",
+        "standard-version": "^9.3.1"
+    }
+}
