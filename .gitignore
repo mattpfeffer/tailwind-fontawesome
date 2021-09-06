@@ -1,7 +1,8 @@
 ### Dependencies & Build Artifacts ###
 
-node_modules
 .husky
+node_modules
+dist
 
 ### Log Files ###
 
