@@ -10,7 +10,9 @@
         "next": "node ./.scripts/next-version.js",
         "release": "standard-version"
     },
-    "dependencies": {},
+    "dependencies": {
+        "tailwindcss": "^2.2.9"
+    },
     "devDependencies": {
         "@commitlint/cli": "^13.1.0",
         "@commitlint/config-conventional": "^13.1.0",
