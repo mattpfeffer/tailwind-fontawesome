@@ -1,19 +1,16 @@
 module.exports = {
     root: true,
-    extends: ['standard', 'semistandard', 'prettier'],
+    extends: ['standard', 'prettier'],
     globals: {},
     env: {
         node: true,
-        es6: true,
+        es2017: true,
         amd: true,
-        browser: true
+        browser: true,
     },
     parserOptions: {
         ecmaFeatures: {
             globalReturn: true,
-            generators: false,
-            objectLiteralDuplicateProperties: false,
-            experimentalObjectRestSpread: true
         },
         ecmaVersion: 2017,
         sourceType: 'module',
@@ -21,18 +18,6 @@ module.exports = {
     plugins: [],
     settings: {},
     rules: {
-        indent: ['error', 4],
-        'no-console': process.env.NODE_ENV === 'production' ? 2 : 0,
-        quotes: ['error', 'single'],
-        'comma-dangle': [
-            'error',
-            {
-                arrays: 'always-multiline',
-                objects: 'always-multiline',
-                imports: 'always-multiline',
-                exports: 'always-multiline',
-                functions: 'ignore',
-            },
-        ],
+        'no-console': 'warn',
     },
 };
