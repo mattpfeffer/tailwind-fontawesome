@@ -1,13 +1,15 @@
-const plugin = require('tailwindcss/plugin');
+const _plugin = require('tailwindcss/plugin');
 
 const icons = require('./manifest.js');
 
-module.exports = plugin.withOptions(
+module.exports = _plugin.withOptions(
     (options) => {
         return function ({ e, addUtilities, theme }) {
+            const fontVersion =
+                options.version === 6 ? 'Font Awesome 6' : 'Font Awesome 5';
             const fontFamily = options.pro
-                ? '"Font Awesome 5 Pro"'
-                : '"Font Awesome 5 Free"';
+                ? '"' + fontVersion + ' Pro"'
+                : '"' + fontVersion + ' Free"';
             const iconStyle = theme('iconStyle');
             const iconSpacing = theme('iconSpacing');
 
@@ -61,12 +63,12 @@ module.exports = plugin.withOptions(
                 {
                     '.icon-duotone': {
                         '&.icon-inline,&::before,&::after': {
-                            fontFamily: '"Font Awesome 5 Duotone"',
+                            fontFamily: '"' + fontVersion + ' Duotone"',
                         },
                     },
                     '.icon-brands': {
                         '&.icon-inline,&::before,&::after': {
-                            fontFamily: '"Font Awesome 5 Brands"',
+                            fontFamily: '"' + fontVersion + ' Brands"',
                         },
                     },
                 },
@@ -104,6 +106,7 @@ module.exports = plugin.withOptions(
     () => ({
         theme: {
             iconStyle: {
+                thin: '100',
                 light: '300',
                 regular: '400',
                 solid: '900',
