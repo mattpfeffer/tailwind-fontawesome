@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.2.0...v0.3.0) (2022-05-25)
+
+
+### Features
+
+* **plugin:** add support for Font Awesome 6 ([a612f4b](https://github.com/mattpfeffer/tailwind-fontawesome/commit/a612f4b93a6afaf1908e282bdbb5d2a3aec1e418))
+
+### [0.2.1](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.2.0...v0.2.1) (2022-05-25)
+
+
+### Features
+
+* **plugin:** add support for Font Awesome 6 ([a612f4b](https://github.com/mattpfeffer/tailwind-fontawesome/commit/a612f4b93a6afaf1908e282bdbb5d2a3aec1e418))
+
 ## [0.2.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.1.0...v0.2.0) (2021-09-07)
 
 ## 0.1.0 (2021-09-06)
