@@ -1,5 +1,5 @@
 module.exports = {
     skip: {
-        "tag": true
-    }
+        // "tag": true
+    },
 };
