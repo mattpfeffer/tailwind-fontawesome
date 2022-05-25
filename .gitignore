@@ -1,19 +1,32 @@
-### Dependencies & Build Artifacts ###
+### Dependencies & Artifacts ###
+
+/node_modules
+/dist
+
+### Tooling ###
 
 .husky
-node_modules
-dist
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.phpintel/
+.idea/
 
 ### Log Files ###
 
+logs/
 *_log
 *.log
+*.log*
 
 ### System Files ###
 
 .DS_Store*
+.AppleDouble
+.LSOverride
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.un~
