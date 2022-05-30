@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.3.0...v0.3.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* **plugin:** address incorrect handling of null options ([3277e98](https://github.com/mattpfeffer/tailwind-fontawesome/commit/3277e985025e8a75bd5ed0883efce7bf124daab5))
+
 ## [0.3.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.2.0...v0.3.0) (2022-05-25)
 
 
