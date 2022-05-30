@@ -5,11 +5,18 @@ const icons = require('./manifest.js');
 module.exports = _plugin.withOptions(
     (options) => {
         return function ({ e, addUtilities, theme }) {
+            let pro, version;
+            if (typeof options !== 'undefined') {
+                ({ pro, version } = options);
+            }
+
             const fontVersion =
-                options.version === 6 ? 'Font Awesome 6' : 'Font Awesome 5';
-            const fontFamily = options.pro
+                version === 6 ? 'Font Awesome 6' : 'Font Awesome 5';
+            const fontFamily = pro
                 ? '"' + fontVersion + ' Pro"'
                 : '"' + fontVersion + ' Free"';
+            // }
+
             const iconStyle = theme('iconStyle');
             const iconSpacing = theme('iconSpacing');
 
