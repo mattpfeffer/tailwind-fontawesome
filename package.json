@@ -3,10 +3,23 @@
     "version": "0.3.1",
     "description": "A set of utility classes that make pairing Font Awesome with Tailwind CSS a breeze.",
     "main": "src/index.js",
-    "repository": "https://github.com/mattpfeffer/tailwind-fontawesome",
+    "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mattpfeffer/tailwind-fontawesome"
+    },
+    "keywords": [
+        "tailwind",
+        "tailwindcss",
+        "tailwindcss-plugin",
+        "plugin",
+        "font",
+        "awesome",
+        "fontawesome",
+        "icon"
+    ],
     "scripts": {
-        "watch": "gulp watch --silent",
         "next": "node ./.scripts/next-version.js",
         "release": "standard-version"
     },
