@@ -4,20 +4,20 @@ module.exports = {
     globals: {},
     env: {
         node: true,
-        es2017: true,
+        es2018: true,
         amd: true,
-        browser: true,
+        browser: true
     },
     parserOptions: {
         ecmaFeatures: {
-            globalReturn: true,
+            globalReturn: true
         },
-        ecmaVersion: 2017,
-        sourceType: 'module',
+        ecmaVersion: 2018,
+        sourceType: 'module'
     },
     plugins: [],
     settings: {},
     rules: {
-        'no-console': 'warn',
-    },
+        'no-console': 'warn'
+    }
 };

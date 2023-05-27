@@ -1,16 +1,10 @@
 ### Dependencies & Artifacts ###
 
-/node_modules
-/dist
+dist/
 
-### Tooling ###
+### Dependencies ###
 
-.husky
-.vscode/
-*.sublime-project
-*.sublime-workspace
-.phpintel/
-.idea/
+node_modules/
 
 ### Log Files ###
 
@@ -18,6 +12,16 @@ logs/
 *_log
 *.log
 *.log*
+
+### Tooling ###
+
+.husky/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.phpintel/
+.atom/
+.idea/
 
 ### System Files ###
 
