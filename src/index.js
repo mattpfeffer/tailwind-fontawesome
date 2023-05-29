@@ -1,21 +1,21 @@
-const _plugin = require('tailwindcss/plugin');
+const plugin = require('tailwindcss/plugin');
 
 const icons = require('./manifest.js');
 
-module.exports = _plugin.withOptions(
+module.exports = plugin.withOptions(
     (options) => {
         return function ({ e, addUtilities, theme }) {
-            let pro, version;
+            let pro, version, family;
             if (typeof options !== 'undefined') {
-                ({ pro, version } = options);
+                ({ pro, version, family } = options);
             }
 
-            const fontVersion =
-                version === 6 ? 'Font Awesome 6' : 'Font Awesome 5';
-            const fontFamily = pro
-                ? '"' + fontVersion + ' Pro"'
-                : '"' + fontVersion + ' Free"';
-            // }
+            const fontVersion = version === 6 ? 'Font Awesome 6' : 'Font Awesome 5';
+            let fontFamily = pro ? '"' + fontVersion + ' Pro"' : '"' + fontVersion + ' Free"';
+
+            if (family === 'sharp') {
+                fontFamily = '"Font Awesome 6 Sharp"';
+            }
 
             const iconStyle = theme('iconStyle');
             const iconSpacing = theme('iconSpacing');
@@ -26,70 +26,70 @@ module.exports = _plugin.withOptions(
                     '.icon-before': {
                         '&::before': {
                             fontFamily: fontFamily,
-                            verticalAlign: 'middle',
+                            verticalAlign: 'middle'
                         },
                         '&::after': {
-                            content: '"" !important',
-                        },
+                            content: '"" !important'
+                        }
                     },
                     '.icon-after': {
                         '&::before': {
-                            content: '"" !important',
+                            content: '"" !important'
                         },
                         '&::after': {
                             fontFamily: fontFamily,
-                            verticalAlign: 'middle',
-                        },
+                            verticalAlign: 'middle'
+                        }
                     },
                     '.icon-outside': {
                         '&::before': {
                             fontFamily: fontFamily,
                             verticalAlign: 'middle',
                             position: 'absolute',
-                            transform: 'translateX(-1.5em)',
+                            transform: 'translateX(-1.5em)'
                         },
                         '&::after': {
-                            content: '"" !important',
-                        },
+                            content: '"" !important'
+                        }
                     },
                     '.icon-inline': {
                         fontFamily: fontFamily,
-                        verticalAlign: 'middle',
-                    },
+                        verticalAlign: 'middle'
+                    }
                 },
                 // Styles
                 Object.entries(iconStyle).map(([key, value]) => {
                     return {
                         [`.${e(`icon-${key}`)}`]: {
                             '&::before,&::after': {
-                                fontWeight: `${value}`,
-                            },
-                        },
+                                fontWeight: `${value}`
+                            }
+                        }
                     };
                 }),
                 {
                     '.icon-duotone': {
                         '&.icon-inline,&::before,&::after': {
-                            fontFamily: '"' + fontVersion + ' Duotone"',
-                        },
+                            fontFamily: '"' + fontVersion + ' Duotone"'
+                        }
                     },
                     '.icon-brands': {
                         '&.icon-inline,&::before,&::after': {
-                            fontFamily: '"' + fontVersion + ' Brands"',
-                        },
-                    },
+                            fontFamily: '"' + fontVersion + ' Brands"'
+                        }
+                    }
                 },
                 // Spacing
                 Object.entries(iconSpacing).map(([key, value]) => {
                     return {
                         [`.${e(`icon-space-${key}`)}`]: {
                             '&.icon-before::before': {
-                                marginRight: `${value}`,
+                                marginRight: `${value}`
                             },
                             '&.icon-after::after': {
-                                marginLeft: `${value}`,
-                            },
-                        },
+                                marginLeft: `${value}`
+                            }
+                        }
                     };
                 }),
                 // Icons
@@ -97,14 +97,14 @@ module.exports = _plugin.withOptions(
                     return {
                         [`.${e(`icon-${icon.name}`)}`]: {
                             '&::before': {
-                                content: `"\\${icon.code}"`,
+                                content: `"\\${icon.code}"`
                             },
                             '&::after': {
-                                content: `"\\${icon.code}"`,
-                            },
-                        },
+                                content: `"\\${icon.code}"`
+                            }
+                        }
                     };
-                }),
+                })
             ];
 
             addUtilities(utilities);
@@ -116,7 +116,7 @@ module.exports = _plugin.withOptions(
                 thin: '100',
                 light: '300',
                 regular: '400',
-                solid: '900',
+                solid: '900'
             },
             iconSpacing: (theme) => ({
                 xs: theme('spacing.1'),
@@ -125,8 +125,8 @@ module.exports = _plugin.withOptions(
                 lg: theme('spacing.4'),
                 xl: theme('spacing.5'),
                 '2xl': theme('spacing.6'),
-                '3xl': theme('spacing.7'),
-            }),
-        },
+                '3xl': theme('spacing.7')
+            })
+        }
     })
 );

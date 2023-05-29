@@ -4,13 +4,17 @@ A set of utility classes that make pairing Font Awesome with Tailwind CSS a bree
 
 ## Before you start
 
-Before you can use this plugin, you still need to separately include the Font Awesome library in your project.
+Before you can use this plugin, you still need to separately include the Font Awesome library in
+your project.
 
-The quickest way to get started is via the official CDN with a free Font Awesome kit via the [website](https://fontawesome.com/start). Other methods are available as well.
+The quickest way to get started is via the official CDN with a free Font Awesome kit via the
+[website](https://fontawesome.com/start). Other methods are available as well.
 
 ### Support
 
-This plugin is **currently compatible with both Tailwind 2 & 3**. From the 1.0.0 release onwards, only Tailwind 3 will be supported. Previous releases should continue to work for the foreseeable future however.
+This plugin is **currently compatible with both Tailwind 2 & 3**. From the 1.0.0 release onwards,
+only Tailwind 3 will be supported. Previous releases should continue to work for the foreseeable
+future however.
 
 ## Installation
 
@@ -33,15 +37,16 @@ module.exports = {
         // ...
     },
     plugins: [
-        require('tailwind-fontawesome'),
+        require('tailwind-fontawesome')
         // ...
-    ],
+    ]
 };
 ```
 
 ### Need the Pro version?
 
-By default, the plugin will reference the free Font Family. If you have a Font Awesome Pro kit, you can switch the Font Family by passing the following configuration option:
+By default, the plugin will reference the free Font Family. If you have a Font Awesome Pro kit, you
+can switch the Font Family by passing the following configuration option:
 
 ```js
 // tailwind.config.js
@@ -51,16 +56,17 @@ module.exports = {
     },
     plugins: [
         require('tailwind-fontawesome')({
-            pro: true,
-        }),
+            pro: true
+        })
         // ...
-    ],
+    ]
 };
 ```
 
 ### What about Font Awesome 6?
 
-The plugin defaults to Font Awesome 5, however, from version 0.3.0 Font Awesome 6 icon sets are also supported:
+The plugin defaults to Font Awesome 5, however, from version 0.3 Font Awesome 6 icon sets are also
+supported:
 
 ```js
 // tailwind.config.js
@@ -70,24 +76,45 @@ module.exports = {
     },
     plugins: [
         require('tailwind-fontawesome')({
-            version: 6,
-        }),
+            version: 6
+        })
         // ...
-    ],
+    ]
 };
 ```
 
+### Classic vs Sharp?
+
+The newer 'sharp' icon sets are supported via the `family` option (v0.4 and up), otherwise 'classic'
+mode is assumed:
+
+```js
+// tailwind.config.js
+module.exports = {
+    theme: {
+        // ...
+    },
+    plugins: [
+        require('tailwind-fontawesome')({
+            family: 'sharp'
+        })
+        // ...
+    ]
+};
+```
+
+In the above use case, the `pro` and `version` options may be omitted (Sharp sets are only available
+in Font Awesome 6 Pro).
+
 ## Usage
 
-At it's simplest, combine a positional class (e.g. `icon-before`) and an icon class (e.g. `icon-{name}`) to display an icon in the target element - `{name}` refers to the icon name in dash case as listed on the official website:
+At it's simplest, combine a positional class (e.g. `icon-before`) and an icon class (e.g.
+`icon-{name}`) to display an icon in the target element - `{name}` refers to the icon name in dash
+case as listed on the official website:
 
 ```html
 <button class="icon-before icon-chevron-right">
-
-
     <!-- Label -->
-
-
 </button>
 ```
 
@@ -95,11 +122,7 @@ Use `icon-space-{size}` to adjust the gap between the icon and other content:
 
 ```html
 <button class="icon-before icon-chevron-right icon-space-sm">
-
-
     <!-- Label -->
-
-
 </button>
 ```
 
@@ -157,7 +180,7 @@ module.exports = {
             thin: '100',
             light: '300',
             regular: '400',
-            solid: '900',
+            solid: '900'
             // Brands and Duotone are reserved and can't be overridden
         },
         iconSpacing: {
@@ -167,8 +190,8 @@ module.exports = {
             lg: '1rem',
             xl: '1.25rem',
             '2xl': '1.5rem',
-            '3xl': '1.75rem',
-        },
-    },
+            '3xl': '1.75rem'
+        }
+    }
 };
 ```
