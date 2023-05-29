@@ -1,6 +1,6 @@
 {
     "name": "tailwind-fontawesome",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "A set of utility classes that make pairing Font Awesome with Tailwind CSS a breeze.",
     "main": "src/index.js",
     "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
