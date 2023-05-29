@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.3.2...v0.4.0) (2023-05-29)
+
+
+### Adds
+
+* **icons:** support for icons added since font awesome 6.1.1 ([1675be7](https://github.com/mattpfeffer/tailwind-fontawesome/commit/1675be7a861bbfdd3a1c64d543b477b01ab4ebb9))
+* **plugin:** support for sharp icon sets ([afda6e3](https://github.com/mattpfeffer/tailwind-fontawesome/commit/afda6e3bcdf8eac601e5c90aa6fbb3b90b9d8b81))
+
 ### [0.3.2](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.3.1...v0.3.2) (2022-06-28)
 
 ### [0.3.1](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.3.0...v0.3.1) (2022-05-30)
