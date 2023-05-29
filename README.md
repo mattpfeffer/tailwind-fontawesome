@@ -137,14 +137,16 @@ Use `icon-space-{size}` to adjust the gap between the icon and other content:
 
 ### Styles
 
-| Class          | Weight | Font Family                                               |
-| -------------- | ------ | :-------------------------------------------------------- |
-| `icon-thin`    | `100`  | `"Font Awesome 6 Pro"` only                               |
-| `icon-light`   | `300`  | `"Font Awesome {5/6} Pro"`                                |
-| `icon-regular` | `400`  | `"Font Awesome {5/6} Pro"`                                |
-| `icon-solid`   | `900`  | `"Font Awesome {5/6} Free"` or `"Font Awesome {5/6} Pro"` |
-| `icon-duotone` | `900`  | `"Font Awesome {5/6} Duotone"`                            |
-| `icon-brands`  | `900`  | `"Font Awesome {5/6} Brands"`                             |
+| Class            | Weight | Font Family                                               |
+| ---------------- | ------ | :-------------------------------------------------------- |
+| `icon-thin`      | `100`  | `"Font Awesome 6 Pro"` only                               |
+| `icon-light`     | `300`  | `"Font Awesome {5/6} Pro"`                                |
+| `icon-regular`   | `400`  | `"Font Awesome {5/6} Pro"`                                |
+| `icon-solid`     | `900`  | `"Font Awesome {5/6} Free"` or `"Font Awesome {5/6} Pro"` |
+| `icon-duotone`\* | `900`  | `"Font Awesome {5/6} Duotone"`                            |
+| `icon-brands`    | `900`  | `"Font Awesome {5/6} Brands"`                             |
+
+\* _Not fully supported, yet_
 
 ### Spacing
 
