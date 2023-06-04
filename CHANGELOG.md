@@ -1,8 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version) for commit
-guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.5.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.4.1...v0.5.0) (2023-06-04)
+
+
+### Adds
+
+* utilities for overriding the vertical alignment of icons ([67d5056](https://github.com/mattpfeffer/tailwind-fontawesome/commit/67d5056e365263b0d853464ced3a7184d6a79751))
 
 ## [0.4.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.3.2...v0.4.0) (2023-05-29)
 
