@@ -21,8 +21,8 @@ module.exports = plugin.withOptions(
             const iconSpacing = theme('iconSpacing');
 
             const utilities = [
+                // Positioning
                 {
-                    // Positioning
                     '.icon-before': {
                         '&::before': {
                             fontFamily: fontFamily,
@@ -92,6 +92,57 @@ module.exports = plugin.withOptions(
                         }
                     };
                 }),
+                // Alignment
+                {
+                    '.icon-baseline': {
+                        '&::before': {
+                            verticalAlign: 'baseline !important'
+                        },
+                        '&::after': {
+                            verticalAlign: 'baseline !important'
+                        }
+                    },
+                    '.icon-sub': {
+                        '&::before': {
+                            verticalAlign: 'sub !important'
+                        },
+                        '&::after': {
+                            verticalAlign: 'sub !important'
+                        }
+                    },
+                    '.icon-super': {
+                        '&::before': {
+                            verticalAlign: 'super !important'
+                        },
+                        '&::after': {
+                            verticalAlign: 'super !important'
+                        }
+                    },
+                    '.icon-top': {
+                        '&::before': {
+                            verticalAlign: 'top !important'
+                        },
+                        '&::after': {
+                            verticalAlign: 'top !important'
+                        }
+                    },
+                    '.icon-middle': {
+                        '&::before': {
+                            verticalAlign: 'middle !important'
+                        },
+                        '&::after': {
+                            verticalAlign: 'middle !important'
+                        }
+                    },
+                    '.icon-bottom': {
+                        '&::before': {
+                            verticalAlign: 'bottom !important'
+                        },
+                        '&::after': {
+                            verticalAlign: 'bottom !important'
+                        }
+                    }
+                },
                 // Icons
                 icons.map((icon) => {
                     return {

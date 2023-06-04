@@ -160,6 +160,20 @@ Use `icon-space-{size}` to adjust the gap between the icon and other content:
 | `icon-space-2xl` | `1.5rem`  |
 | `icon-space-3xl` | `1.75rem` |
 
+### Vertical Alignment
+
+This plugin defaults to 'middle' for icon alignment but sometimes this is not the best approach, as
+in the case of uppercase text. Use the below utilities to override that behaviour.
+
+| Class           | Vertical Alignment |
+| --------------- | ------------------ |
+| `icon-baseline` | `baseline`         |
+| `icon-sub`      | `sub`              |
+| `icon-super`    | `super`            |
+| `icon-top`      | `top`              |
+| `icon-middle`   | `middle`           |
+| `icon-bottom`   | `bottom`           |
+
 ### Icons
 
 | Class                | Unicode |
