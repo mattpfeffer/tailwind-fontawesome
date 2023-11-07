@@ -103,6 +103,26 @@ module.exports = {
 };
 ```
 
+
+### Custom mapping
+
+If you want to have a custom mapping or add missing icons you can use `names` option (v0.6 and up):
+
+```js
+// tailwind.config.js
+module.exports = {
+    theme: {
+        // ...
+    },
+    plugins: [
+        require('tailwind-fontawesome')({
+            names: [ {name: 'x-twitter', code: 'e61b'} ]
+        })
+        // ...
+    ]
+};
+```
+
 In the above use case, the `pro` and `version` options may be omitted (Sharp sets are only available
 in Font Awesome 6 Pro).
 
