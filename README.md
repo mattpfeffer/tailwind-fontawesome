@@ -103,6 +103,8 @@ module.exports = {
 };
 ```
 
+In the above use case, the `pro` and `version` options may be omitted (Sharp sets are only available
+in Font Awesome 6 Pro).
 
 ### Custom mapping
 
@@ -123,8 +125,6 @@ module.exports = {
 };
 ```
 
-In the above use case, the `pro` and `version` options may be omitted (Sharp sets are only available
-in Font Awesome 6 Pro).
 
 ## Usage
 
