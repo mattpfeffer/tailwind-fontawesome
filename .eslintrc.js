@@ -9,15 +9,13 @@ module.exports = {
         browser: true
     },
     parserOptions: {
-        ecmaFeatures: {
-            globalReturn: true
-        },
-        ecmaVersion: 2018,
-        sourceType: 'module'
+        ecmaFeatures: {},
+        ecmaVersion: 2018
     },
     plugins: [],
     settings: {},
     rules: {
-        'no-console': 'warn'
+        'no-console': 'warn',
+        'no-protoype-builtins': 'off'
     }
 };
