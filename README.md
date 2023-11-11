@@ -106,6 +106,26 @@ module.exports = {
 In the above use case, the `pro` and `version` options may be omitted (Sharp sets are only available
 in Font Awesome 6 Pro).
 
+### Custom Mapping
+
+If you want to have a custom mapping or add missing icons you can use the `custom` option (v0.6 and up):
+
+```js
+// tailwind.config.js
+module.exports = {
+    theme: {
+        // ...
+    },
+    plugins: [
+        require('tailwind-fontawesome')({
+            custom: [ {name: 'x-twitter', code: 'e61b'} ]
+        })
+        // ...
+    ]
+};
+```
+
+
 ## Usage
 
 At it's simplest, combine a positional class (e.g. `icon-before`) and an icon class (e.g.
