@@ -1,6 +1,19 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [0.6.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.5.0...v0.6.0) (2023-11-11)
+
+
+### Adds
+
+* support for custom icon mapping ([d7fde82](https://github.com/mattpfeffer/tailwind-fontawesome/commit/d7fde828091a7cc4373241ff182ebe2ecda42f91))
+* support for icons added since font awesome 6.4.0 ([16c4b8e](https://github.com/mattpfeffer/tailwind-fontawesome/commit/16c4b8e0226f95796af5a9f755e7f0c32aeaf28f))
+
+
+### Fixes
+
+* update deps to patch several upstream vulnerabilities ([ddf39c3](https://github.com/mattpfeffer/tailwind-fontawesome/commit/ddf39c3c63d130f257db5aeedf96ac95bc368a1e))
 
 ## [0.5.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.4.1...v0.5.0) (2023-06-04)
 
