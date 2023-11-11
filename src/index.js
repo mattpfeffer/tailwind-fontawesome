@@ -5,12 +5,12 @@ const icons = require('./manifest.js');
 module.exports = plugin.withOptions(
     (options) => {
         return function ({ e, addUtilities, theme }) {
-            let pro, version, family, names;
+            let pro, version, family, custom;
             if (typeof options !== 'undefined') {
-                ({ pro, version, family, names } = options);
+                ({ pro, version, family, custom } = options);
             }
 
-            icons.push(... names || []);
+            icons.push(... custom || []);
 
             const fontVersion = version === 6 ? 'Font Awesome 6' : 'Font Awesome 5';
             let fontFamily = pro ? '"' + fontVersion + ' Pro"' : '"' + fontVersion + ' Free"';
