@@ -21,11 +21,14 @@ future however.
 Install the plugin:
 
 ```sh
-# Using npm
+# Using NPM
 npm install tailwind-fontawesome
 
 # Using Yarn
 yarn add tailwind-fontawesome
+
+# Using PNPM
+pnpm install tailwind-fontawesome
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -108,7 +111,8 @@ in Font Awesome 6 Pro).
 
 ### Custom Mapping
 
-If you want to have a custom mapping or add missing icons you can use the `custom` option (v0.6 and up):
+If you want to have a custom mapping or add missing icons you can use the `custom` option (v0.6 and
+up):
 
 ```js
 // tailwind.config.js
@@ -118,13 +122,12 @@ module.exports = {
     },
     plugins: [
         require('tailwind-fontawesome')({
-            custom: [ {name: 'x-twitter', code: 'e61b'} ]
+            custom: [{ name: 'x-twitter', code: 'e61b' }]
         })
         // ...
     ]
 };
 ```
-
 
 ## Usage
 
