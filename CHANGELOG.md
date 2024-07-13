@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.7.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.6.0...v0.7.0) (2024-07-13)
+
+
+### Adds
+
+* support for icons added since font awesome 6.5.0 ([cd93c86](https://github.com/mattpfeffer/tailwind-fontawesome/commit/cd93c865cfe6be4c149d7d27e6e1dae5515c0d4e))
+
+
+### Fixes
+
+* improve icon handling some default display properties ([e15d22f](https://github.com/mattpfeffer/tailwind-fontawesome/commit/e15d22f9c5473e3bdaa99498d34bf19e35586966))
+
 ## [0.6.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.5.0...v0.6.0) (2023-11-11)
 
 
