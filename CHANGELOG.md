@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.7.1](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.7.0...v0.7.1) (2024-07-14)
+
+
+### Fixes
+
+* fix missing colon in plugin config ([f98fd1b](https://github.com/mattpfeffer/tailwind-fontawesome/commit/f98fd1b70f29edb017debb1dcedc9fef4bc49e96))
+
 ## [0.7.0](https://github.com/mattpfeffer/tailwind-fontawesome/compare/v0.6.0...v0.7.0) (2024-07-13)
 
 
