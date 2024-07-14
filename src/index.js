@@ -25,11 +25,12 @@ module.exports = plugin.withOptions(
             const utilities = [
                 // Positioning
                 {
-                    '.icon-before::before, .icon-after::after, .icon-outside::before, .icon-inline' {
-                        display: 'inline-block',
-                        'text-rendering': 'auto',
-                        '-webkit-font-smoothing': 'antialiased'
-                    },
+                    '.icon-before::before, .icon-after::after, .icon-outside::before, .icon-inline':
+                        {
+                            display: 'inline-block',
+                            'text-rendering': 'auto',
+                            '-webkit-font-smoothing': 'antialiased'
+                        },
                     '.icon-before': {
                         '&::before': {
                             fontFamily: fontFamily,
@@ -45,9 +46,7 @@ module.exports = plugin.withOptions(
                         },
                         '&::after': {
                             fontFamily: fontFamily,
-                            verticalAlign: 'middle',
-
-
+                            verticalAlign: 'middle'
                         }
                     },
                     '.icon-outside': {
